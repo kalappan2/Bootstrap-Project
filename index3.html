@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alinea Restaurant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar-brand img { height: 60px; }
+    .button {
+      border: 1px solid black;
+      background-color: white;
+      padding: 8px 20px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: black;
+      color: white;
+    }
+    .b1 {
+      margin-top: 20px;
+      height: 40px;
+    }
+    .d1:hover {
+      background-color: lightcoral;
+      color: white;
+    }
+    .cd {
+      margin-top: 60px;
+    }
+    .card-img-top {
+      height: 300px;
+      object-fit: cover;
+    }
+    .footer-section {
+      background-color: #b0aea5;
+      padding: 40px 0;
+    }
+    .footer-input {
+      max-width: 100%;
+      width: 100%;
+      height: 40px;
+    }
+    .subscribe-btn {
+      margin-top: 10px;
+      height: 40px;
+      width: 100%;
+    }
+    .footer-social i {
+      font-size: 30px;
+      margin: 10px;
+    }
+    @media (max-width: 576px) {
+      .card { width: 100% !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="alinea-logo.png" alt="Alinea Logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index2.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="index4.html">Form</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Private Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="index3.html">The Alinea Group</a></li>
+          <li class="nav-item"><a class="nav-link" href="index5.html">Career</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-square-instagram"></i></a></li>
+          <li class="nav-item"><button class="button">Book A Table</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Image -->
+  <div class="text-center mt-4">
+    <img src="Alinea20.jpg" class="img-fluid" alt="Restaurant" />
+  </div>
+
+  <!-- Dropdown -->
+  <div class="text-center my-4">
+    <div class="dropdown">
+      <button class="btn btn-danger dropdown-toggle b1" type="button" data-bs-toggle="dropdown">RESTAURANT BRANCHES</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item d1" href="#">TAMILNADU</a></li>
+        <li><a class="dropdown-item d1" href="#">BANGALORE</a></li>
+        <li><a class="dropdown-item d1" href="#">MUMBAI</a></li>
+        <li><a class="dropdown-item d1" href="#">DELHI</a></li>
+        <li><a class="dropdown-item d1" href="#">ANDHRA PRADESH</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="container cd">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="Burger1.webp" class="card-img-top" alt="Burger">
+          <div class="card-body text-center">
+            <p class="fs-5">BURGER</p>
+            <p class="fs-5">500 RS</p>
+            <button class="btn btn-primary w-100">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="pizza.jpg" class="card-img-top" alt="Pizza">
+          <div class="card-body text-center">
+            <p class="fs-5">PIZZA</p>
+            <p class="fs-5">350 RS</p>
+            <button class="btn btn-primary w-100">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="m1.jpg" class="card-img-top" alt="Fish">
+          <div class="card-body text-center">
+            <p class="fs-5">FISH</p>
+            <p class="fs-5">250 RS</p>
+            <button class="btn btn-primary w-100">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="Grill chicken.jpg" class="card-img-top" alt="Grill Chicken">
+          <div class="card-body text-center">
+            <p class="fs-5">GRILL CHICKEN</p>
+            <p class="fs-5">340 RS</p>
+            <button class="btn btn-primary w-100">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer-section mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-6 mb-4">
+          <h3>STAY CONNECTED</h3>
+          <p class="fs-5">Be the first to hear about new events and ticket releases!</p>
+          <img src="Alinea21.png" height="35" width="200" alt="Subscribe Option">
+          <img src="Alinea22.png" height="35" width="200" alt="Subscribe Option">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label fs-5">Email</label>
+          <input type="text" id="email" class="form-control footer-input" placeholder="Enter your email">
+          <button class="btn btn-dark subscribe-btn mt-2">Subscribe</button>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <h4>The Alinea Group</h4>
+        <p class="fs-5">406 N Sangamon St., Chicago, IL, 60642</p>
+        <div class="footer-social">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </div>
+      <ul class="pagination justify-content-center mt-4">
+        <li class="page-item"><a class="page-link" href="index2.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="index4.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="index.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="index3.html">4</a></li>
+        <li class="page-item"><a class="page-link" href="index5.html">5</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
