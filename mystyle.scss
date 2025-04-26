@@ -1,0 +1,64 @@
+// Main Container Styling
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+  .image {
+      width: 100%;
+      max-width: 800px; // Maximum size for large screens
+      height: auto;
+      object-fit: contain;
+  }
+
+  .main1 {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      .image2 {
+          width: 100%;
+          max-width: 250px; // Set a max width for images inside .main1
+          height: auto;
+          object-fit: contain;
+      }
+  }
+}
+
+// Media Queries for Responsiveness
+
+// For screens smaller than 768px (Tablets and below)
+@media (max-width: 768px) {
+  .main1 {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .image2 {
+      width: 80%;  // Adjust width for smaller screens
+      max-width: 350px; // Limit the max-width to avoid image being too large
+      margin-bottom: 20px; // Add spacing between images
+  }
+}
+
+// For screens smaller than 480px (Mobile screens)
+@media (max-width: 480px) {
+  .image {
+      width: 100%;
+  }
+  
+  .main1 {
+      flex-direction: column;
+  }
+  
+  .image2 {
+      width: 90%;  // Adjust width further on smaller devices
+      max-width: 300px;
+  }
+}
+
+  
+  
