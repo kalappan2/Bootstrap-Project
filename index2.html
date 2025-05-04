@@ -42,6 +42,62 @@
       text-align: center;
       border: 1px solid black;
     }
+
+
+    /* Adjusting carousel code */
+
+
+    
+    @media (min-width: 992px) { /* Target lg screens (992px) and wider */
+      #carouselExampleIndicators .carousel-item img {
+        height: 100vh; /* Adjust vh value (e.g., 60vh, 70vh) or use pixels (e.g., 600px) */
+        object-fit: cover; /* Ensure images cover the area without distortion */
+        object-position: center;  /* Center the image */
+      }
+    }
+
+
+    
+
+
+   /* Style 1: Solid Circular Background */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  width: 3rem;                         /* Adjust size */
+  height: 3rem;                        /* Adjust size */
+  border-radius: 50%;                  /* Make it circular */
+  top: 50%;                            /* Center vertically */
+  transform: translateY(-50%);
+  opacity: 0.8;                        /* Slightly visible */
+  transition: opacity 0.15s ease, background-color 0.15s ease; /* Smooth transition */
+}
+
+/* Adjust margin if needed so they don't overlap content too much */
+.carousel-control-prev {
+  left: 1rem; /* Adjust position from edge */
+}
+.carousel-control-next {
+  right: 1rem; /* Adjust position from edge */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker on hover/focus */
+  opacity: 1;
+}
+
+/* Style the icon itself (make it white) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60%; /* Make icon slightly smaller within the circle */
+  /* Filter to make the default black SVG white */
+  filter: brightness(0) invert(1);
+}
+    /* End of carousel code */
+
   </style>
 </head>
 <body>
@@ -82,7 +138,7 @@
         <img src="P1.avif" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="i2.jpg" class="d-block w-100" alt="...">
+        <img src="p40.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
