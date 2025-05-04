@@ -44,23 +44,24 @@
     }
 
 
-    /* Adjusting carousel code */
+   /* Adjusting carousel code */
 
+/* Base styles for carousel images on ALL screen sizes */
+#carouselExampleIndicators .carousel-item img {
+  height: 60vh; /* Default height for smaller screens - ADJUST AS NEEDED (e.g., 400px, 70vh) */
+  object-fit: cover; /* Scale the image to cover the area, cropping if necessary */
+  object-position: center; /* Center the image within the frame */
+  width: 100%; /* Ensure image element spans the container width */
+}
 
-    
-    @media (min-width: 992px) { /* Target lg screens (992px) and wider */
-      #carouselExampleIndicators .carousel-item img {
-        height: 100vh; /* Adjust vh value (e.g., 60vh, 70vh) or use pixels (e.g., 600px) */
-        object-fit: cover; /* Ensure images cover the area without distortion */
-        object-position: center;  /* Center the image */
-      }
-    }
+/* Styles specifically for large screens (lg) and wider */
+@media (min-width: 992px) {
+  #carouselExampleIndicators .carousel-item img {
+    height: 100vh; /* Override with desired height for large screens */
+  }
+}
 
-
-    
-
-
-   /* Style 1: Solid Circular Background */
+/* Style 1: Solid Circular Background for Controls (Keep this as is) */
 .carousel-control-prev,
 .carousel-control-next {
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
@@ -96,7 +97,8 @@
   /* Filter to make the default black SVG white */
   filter: brightness(0) invert(1);
 }
-    /* End of carousel code */
+/* End of carousel code */
+   
 
   </style>
 </head>
